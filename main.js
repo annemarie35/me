@@ -1,3 +1,8 @@
+const backToTop = document.getElementById("back-to-top");
+window.addEventListener("scroll", () => {
+  backToTop.classList.toggle("visible", window.scrollY > 200);
+});
+
 // Random colored link underlines — same as blahg
 const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 

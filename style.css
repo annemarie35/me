@@ -339,3 +339,23 @@ ul.bullets li::before {
   }
   .tech strong { color: var(--white); }
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  #back-to-top { color: var(--white); }
+}
