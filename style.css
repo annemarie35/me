@@ -172,11 +172,38 @@ time {
 
 @media (max-width: 600px) {
   nav a:not(:last-child) { padding: 0; }
+  .cv-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .cv-header-photo {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+  }
 }
 
 /* ── CV-specific layout ── */
 .cv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   margin: 2rem 0 1rem;
+}
+
+.cv-header-text {
+  flex: 1;
+}
+
+.cv-header-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 3px solid var(--blue);
 }
 
 .cv-header h1 {
