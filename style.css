@@ -172,6 +172,10 @@ time {
 
 @media (max-width: 600px) {
   nav a:not(:last-child) { padding: 0; }
+  .exp-logo {
+    height: 2rem;
+    max-width: 6rem;
+  }
   .cv-header {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -268,6 +272,20 @@ time {
   color: var(--gray);
   font-style: italic;
   margin-bottom: 0.2rem;
+}
+
+.exp-meta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.exp-logo {
+  height: 3rem;
+  width: auto;
+  max-width: 8rem;
+  object-fit: contain;
+  margin-top: 0.3rem;
 }
 
 .exp-title {
