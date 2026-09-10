@@ -405,6 +405,31 @@ ul.bullets li::before {
   pointer-events: auto;
 }
 
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  font-size: 0.75em;
+  color: var(--gray);
+}
+
+.social-links a svg {
+  transition: color 0.15s ease;
+}
+
+.social-links a:hover svg,
+.social-links a:hover span {
+  color: var(--blue);
+}
+
 @media (prefers-color-scheme: dark) {
   #back-to-top { color: var(--white); }
 }
