@@ -159,7 +159,10 @@ time {
     background-color: #0f0f0f;
     color: var(--white);
   }
-  :root { --gray: #a4a4a4; }
+  :root {
+    --white: rgb(239, 239, 239);
+    --gray: #a4a4a4;
+  }
   html, body, body button, body h1, body strong, body b, body em, body blockquote {
     background: var(--black);
     color: var(--white);
