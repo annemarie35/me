@@ -159,7 +159,10 @@ time {
     background-color: #0f0f0f;
     color: var(--white);
   }
-  :root { --gray: #a4a4a4; }
+  :root {
+    --white: rgb(239, 239, 239);
+    --gray: #a4a4a4;
+  }
   html, body, body button, body h1, body strong, body b, body em, body blockquote {
     background: var(--black);
     color: var(--white);
@@ -400,6 +403,31 @@ ul.bullets li::before {
 #back-to-top.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  font-size: 0.75em;
+  color: var(--gray);
+}
+
+.social-links a svg {
+  transition: color 0.15s ease;
+}
+
+.social-links a:hover svg,
+.social-links a:hover span {
+  color: var(--blue);
 }
 
 @media (prefers-color-scheme: dark) {
